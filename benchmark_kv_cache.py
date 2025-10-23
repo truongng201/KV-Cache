@@ -13,7 +13,7 @@ model.eval()
 
 prompt = "The cat sat on the"
 inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
-max_new_tokens = 64  # same for all benchmarks
+max_new_tokens = 96  # same for all benchmarks
 
 # ------------------------------
 # Helper: generate tokens with past_key_values
