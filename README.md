@@ -5,7 +5,8 @@
 ```bash
 conda create -n kv_cache_ext python=3.10 -y
 conda activate kv_cache_ext
-pip install -e .
+pip install -r requirements.txt
+# Please ensure pytorch-cuda is installed for the correct CUDA version
 ```
 
 ```bash # To build the C++/CUDA extension

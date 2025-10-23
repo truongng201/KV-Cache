@@ -1,0 +1,6 @@
+pytorch
+torchvision
+torchaudio
+transformers
+ninja
+pytorch-cuda==11.8
