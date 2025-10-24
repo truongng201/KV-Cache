@@ -23,24 +23,17 @@ python3 benchmark_kv_cache.py
 
 ```terminal
 # Example benchmark results
-Running benchmark without KV-cache...
-🐌 PyTorch WITHOUT cache: 1858.3ms, 785.10 MB
-Running benchmark with PyTorch KV-cache...
-🔥 PyTorch WITH cache: 1277.3ms, 965.68 MB
-Running benchmark with custom CUDA KV-cache...
-🧠 Custom CUDA KV-cache: 1470.8ms, 989.38 MB
+Benchmark Summary
+  • WITHOUT cache: 3465.5ms | 901.13 MB
+  • PyTorch cache: 1961.3ms | 1375.16 MB
+  • Custom cache : 2217.1ms | 1422.49 MB
 
-⚖️ Benchmark Summary
-  • WITHOUT cache: 1858.3ms | 785.10 MB
-  • PyTorch cache: 1277.3ms | 965.68 MB
-  • Custom cache : 1470.8ms | 989.38 MB
-
-🚀 Speedup Analysis
-  • PyTorch cache vs no cache: 1.5x faster
-  • Custom cache vs no cache: 1.3x faster
+Speedup Analysis
+  • PyTorch cache vs no cache: 1.8x faster
+  • Custom cache vs no cache: 1.6x faster
   • Custom cache vs PyTorch cache: 0.9x slower
 
-💾 Memory Usage Comparison
-  • PyTorch cache memory reduction: -23.0%
-  • Custom cache memory reduction: -26.0%
+Memory Usage Comparison
+  • PyTorch cache memory reduction: -52.6%
+  • Custom cache memory reduction: -57.9%
 ```
