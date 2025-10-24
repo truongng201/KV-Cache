@@ -99,8 +99,3 @@ pytorch_vs_custom = time_pytorch_cache / time_custom
 print(f"  • PyTorch cache vs no cache: {speedup_pytorch:.1f}x faster")
 print(f"  • Custom cache vs no cache: {speedup_custom:.1f}x faster")
 print(f"  • Custom cache vs PyTorch cache: {pytorch_vs_custom:.1f}x {'faster' if pytorch_vs_custom > 1 else 'slower'}")
-print(f"\nMemory Usage Comparison")
-mem_reduction_pytorch = ((mem_no_cache - mem_pytorch_cache) / mem_no_cache) * 100
-mem_reduction_custom = ((mem_no_cache - mem_custom) / mem_no_cache) * 100
-print(f"  • PyTorch cache memory reduction: {mem_reduction_pytorch:.1f}%")
-print(f"  • Custom cache memory reduction: {mem_reduction_custom:.1f}%")
